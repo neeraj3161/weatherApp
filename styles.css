@@ -1,0 +1,230 @@
+/* feComponentTransfer */
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif; */
+
+/* to remove all the pre existing css by user agent */
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+    
+
+.top-container{
+    background-color: #161853;
+    text-align: center;
+    height:500px;
+}
+.info{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    
+}
+.heading{
+    
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #F7F7F7;
+    margin-top: 16%;
+    
+}
+
+.hr1{
+    margin: auto;
+   width: 10%;
+    border-top:5px dotted #EAEAEA;
+    border-bottom:none;
+    
+}
+
+.head2{
+    margin-top:46px;
+}
+
+.para1{
+    font-family: 'Source Sans 3', sans-serif;
+    color: black;
+    font-size: 1rem;
+    padding-left: 93px;
+    padding-right:93px;
+    line-height: 33px;
+    margin-bottom: 6%;
+}
+
+.source{
+    text-align: center;
+    background-color: #161853;
+    text-align: center;
+    height:500px;
+
+}
+
+.head2.h2{
+    color: #F7F6F2;
+    padding-top: 10%;
+}
+
+.table{
+    margin: auto;
+    margin-bottom: 6%;
+    border: none;
+    width: 39%;
+    height: 38%;
+
+}
+
+
+
+.link1{
+    outline: none;
+    
+    cursor: pointer;
+    color: #EEEEEE;
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+}
+.link1:hover{
+    color: #465e90;
+}
+
+.wear{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.city{
+    width: 20%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border:0px;
+    /* this will remove the pre existing outline when we select the input */
+    outline:cadetblue;
+    border-radius: 5%;
+}
+
+.btn {
+    background: #023b61;
+    background-image: -webkit-linear-gradient(top, #023b61, #4090c2);
+    background-image: -moz-linear-gradient(top, #023b61, #4090c2);
+    background-image: -ms-linear-gradient(top, #023b61, #4090c2);
+    background-image: -o-linear-gradient(top, #023b61, #4090c2);
+    background-image: linear-gradient(to bottom, #023b61, #4090c2);
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: 'Libre Baskerville', serif;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 7px 7px 9px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #34566b;
+    background-image: -webkit-linear-gradient(top, #34566b, #3498db);
+    background-image: -moz-linear-gradient(top, #34566b, #3498db);
+    background-image: -ms-linear-gradient(top, #34566b, #3498db);
+    background-image: -o-linear-gradient(top, #34566b, #3498db);
+    background-image: linear-gradient(to bottom, #34566b, #3498db);
+    text-decoration: none;
+  }
+
+  .insta{
+    width: 30px;
+    margin-bottom: 3%;
+    display: inline-block;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.new{
+    text-align: center;
+    background-color: #161853;
+    text-align: center;
+}
+
+.h3{
+    font-family: 'Montserrat', sans-serif;
+        color: #F7F7F7;
+}
+
+.para2{
+    font-family: 'Source Sans 3', sans-serif;
+    color: #F7F7F7;
+    font-size: 0.8rem;
+    padding-left: 29px;
+    padding-right: 29px;
+    line-height: 22px;
+    position: relative;
+    bottom: 30px;
+}
+
+.table2{
+    margin: auto;
+        border: none;
+        width: 75%;
+        height: 38%;
+        
+}
+
+
+
+
+  @media (max-width: 500px) {
+    .table{
+        margin: auto;
+        border: none;
+        width: 75%;
+        height: 38%;
+        
+    }
+    .insta{
+        padding-bottom: 8%;
+        padding-right: 3%;
+    }
+
+    .head2.h2{
+        padding-top: 17%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .para1 {
+        font-family: 'Source Sans 3', sans-serif;
+        color: black;
+        font-size: 0.8rem;
+        padding-left: 29px;
+        padding-right: 29px;
+        line-height: 22px;
+        margin-bottom: 8%;
+    }
+    .heading {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        color: #F7F7F7;
+        margin-top: 27%;
+    }
+
+    
+    .city {
+        width: 43%;
+        margin-top: 10%;
+
+}
+.wear {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 47px;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+
+
+}
+

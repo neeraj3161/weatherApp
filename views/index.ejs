@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="images\weather.png">
+    
+</head>
+<body>
+    <div class="top-container">
+        <h1 class="heading">Let's find out the weather</h1>
+        <br>
+        <form class="form1" action="/" method="post">
+        <input name="city" autocomplete="off" class="city" type="search" placeholder="Enter city name">
+        <button  class="btn">Go</button>
+        </form>
+        <h3 class="wear" style="color: aliceblue;"><em><%=city%> <br> <%=tempt%></em></h3>
+
+    </div>
+
+    <div class="info">
+        <h2 class="head2">How this works??</h2>
+        <br>
+        <p class="para1">Here we are encoperating Node js as a backend server where it takes the user input (here your city name) sends it to the server where it again checks it with the api of open weather and gets a response in hex format which is then rendered and converted into JSON format and finally it is sent out to the website's HTML using DOM manupulation.</p>
+        <hr class="hr1">
+        
+    </div>
+
+    <div class="source">
+        <h2 class="head2 h2">Check out some good reads to see how things work!!</h2><br>
+        <table class="table">
+            <tr>
+                <td><a class="link1" href="https://nodejs.org/docs/latest-v15.x/api/">Node js</a></td>
+                <td><a class="link1" href="https://expressjs.com/en/5x/api.html">Express js</a></td>
+            </tr>
+            <tr>
+                <td><a class="link1" href="https://nodejs.org/api/https.html">HTTPS module</a></td>
+                <td><a class="link1" href="https://openweathermap.org/api">Open weather</a></td>
+            </tr>
+        </table>
+
+
+        <hr class="hr1">
+    </div>
+    <div class="new">
+        <p class="para2"><b>Get in touch</b></p>
+        <table class="table2">
+            <tr><a href="https://www.instagram.com/tripathi_31"><img class="insta" src="/images/instagram.png" alt="insta"></a></tr>
+            <tr><a href="tel:7447553161"><img class="insta" src="/images/phone-call.png" alt="insta"></a></tr>
+            <tr><a href="https://www.github.com/neeraj3161"><img class="insta" src="/images/github.png" alt="insta"></a></tr>
+        </table>
+        <p class="para2">&copy; 2021 weather app by Neeraj Tripathi</p>
+        
+    </div>   
+</body>
+</html>
