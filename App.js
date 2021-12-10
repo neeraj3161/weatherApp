@@ -29,20 +29,28 @@ app.get('/',(req,res)=>{
         const url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=4ca468305bdc7e02114f9c1bd27c9466"
         https.get(url,function(response){
             console.log(response.statusCode);
-            response.on("data",function(data){
-                // console.log(data);
-                const weatherData=JSON.parse(data);
-                console.log(weatherData);
+            var status=response.statusCode;
+            if (status==404){
+              res.write('<body style="display: inline-block;text-align:centre;margin=100px;"><h1 >404 <br>INVALID CITY NAME</h1></body>')  
+              res.send();
+            }else{
+                response.on("data",function(data){
+                    // console.log(data);
+                    const weatherData=JSON.parse(data);
+                    console.log(weatherData);
+                    
+                    const temp = weatherData.main.temp;
+                    const finalTemp=Math.round(temp-273.15)+" degrees";
+                    // res.send("The temp is "+String(Math.round(finalTemp))+" degrees");
+                    res.render("index",{city:namecity,tempt:finalTemp});
+                    
+        
                 
-                const temp = weatherData.main.temp;
-                const finalTemp=Math.round(temp-273.15)+" degrees";
-                // res.send("The temp is "+String(Math.round(finalTemp))+" degrees");
-                res.render("index",{city:namecity,tempt:finalTemp});
-                
-    
+        
+                })
+
+            }
             
-    
-            })
         })
     })
 
